@@ -1,2 +1,2 @@
-# music_palyer
+# music_player
 Aplikasi Pemutar Musik
