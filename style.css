@@ -1,5 +1,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #9a1d86, #1595be);
+    font-weight: bold;
 }
 .player{
     height: 95vh;
@@ -12,7 +14,8 @@ body{
     border: 1px solid transparent;
     padding: 30px;
     border-radius: 20px;
-    box-shadow: rgba(0,0, 0, 0.3) 0px 19px 38px, rgba(0,0, 0, 0.22) 0px 15px 12px;
+    background-color: #ddd;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0,0, 0, 0.22) 0px 15px 12px;
 }
 .details{
     display: flex;
@@ -20,21 +23,23 @@ body{
     flex-direction: column;
     justify-content: center;
 }
+
 .track-art{
     margin: 25px;
     height: 250px;
     width: 250px;
-    border: 2px solid #fff;
+    border: 2px solid #fffafa;
     background-size: cover;
     background-position: center;
     border-radius: 50%;
-    -moz-box-shadow: 0px 6px 5px #ccc;
-    -webkit-box-shadow: 0px 6px 5px #ccc;
-    box-shadow: 0px 6px 5px #ccc;
+    -moz-box-shadow: 0px 6px 5px black;
+    -webkit-box-shadow: 0px 6px 5px black;
+    box-shadow: 0px 6px 5px black;
     -moz-border-radius: 190px;
     -webkit-border-radius: 190px;
     border-radius: 190px;
 }
+
 .now-playing{
     font-size: 1rem;
 }
@@ -64,7 +69,7 @@ body{
     transition: opacity .2s;
 }
 .repeat-track:hover,
-.repeat-track:hover,
+.random-track:hover,
 .playpause-track:hover,
 .prev-track:hover,
 .next-track:hover{
@@ -94,7 +99,7 @@ body{
     height: 15px;
     background: white;
     border: 3px solid #3774ff;
-    cursor: pointer;
+    cursor: grab;
     border-radius: 100%;
 }
 .seek_slider:hover,
@@ -119,7 +124,8 @@ i,
 i.fa-play-circle,
 i.fa-pause-circle,
 i.fa-step-forward,
-i.fa-step-backward{
+i.fa-step-backward,
+p{
     cursor: pointer;
 }
 .randomActive{
@@ -147,6 +153,7 @@ i.fa-step-backward{
     height: 150%;
     width: 10px;
     border-radius: 50px;
+    margin: 0 5px;
     animation: animate 1.4s linear infinite;
 }
 @keyframes animate{
@@ -155,6 +162,7 @@ i.fa-step-backward{
         background: #4286f4;
     }
     100%{
+        background: #4286f4;
         height: 100%;
     }
 }
